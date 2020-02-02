@@ -35,10 +35,9 @@ test () {
     }
 }
 
-/*
-task firefox (type:Test){
-        systemProperty "driver", "firefox"
-        useTestNG {
-            suites "/src/test/resources/testNg"
-        }
-}*/
+task chrome (type:Test) {
+    systemProperty "driver", "chrome"
+    useTestNG {
+        suites "/src/test/resources/testNg"
+    }
+}
